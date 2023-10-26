@@ -1,5 +1,4 @@
 const {success, deleteResponse} = require('./../utils/response')
-const {createToken} = require('./../utils/auth.helper')
 
 module.exports.getAll = (Model) => async (req, res, next) => {
     const docs = await Model.find();
